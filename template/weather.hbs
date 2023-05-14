@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    {{>head}}
+
+    <body>
+
+    <!-- navigation -->
+    {{>header}}
+    <!-- navigation -->
+
+    <!-- main body -->
+
+    <div id="warning" class="warning-hidden">
+        <p class="wording">This is a warning message!</p>
+    </div>
+        <div class="mainBox  mx-auto ">
+            <div class="searchBox text-center ">
+                <form action="" class="searchBox pt-12 md:pt-12">
+                    <input class="search  w-60 py-4 px-4  rounded-l-lg md:w-96 md:py-4 md:px-8 hover:border-gray-600 backdrop: " type="text" id="cityName" placeholder="Enter your city name">
+                    <input type="submit" value="search" id="submitbtn" class="btn rounded-r-lg py-4 px-4">
+                </form>
+            </div>
+            <div class="md:flex pt-10">
+                <div id="weathercon" class="justify-center text-center mt-16 mb-16">
+                    <p class="w-auto weatherCon"></p>
+                 </div>
+
+                 <div class="info text-2xl mt-8 mr-10">
+                <h2 class="location"></h2>
+                <p id="date"></p>
+                <h1 class="temp"></h1>
+             <h3 class="tempmin_max"></h3>
+                </div>
+        
+            </div>
+        </div>
+    <!-- main body -->
+
+
+    <!-- footer -->
+    {{>footer}}
+    <script src="js/main.js">
+        
+    </script>
+    </body>
+
+    </html>
